@@ -13,9 +13,9 @@
   <DisplayName DefaultValue="Visor 360"/>
   <Description DefaultValue="Visualiza tours 360 desde Kuula, Matterport y otras plataformas en PowerPoint."/>
 
-  <IconUrl DefaultValue="https://pmoconsulting2024-star.github.io/visor360/taskpane.html"/>
-  <HighResolutionIconUrl DefaultValue="https://pmoconsulting2024-star.github.io/visor360/taskpane.html"/>
-  <SupportUrl DefaultValue="https://pmoconsulting2024-star.github.io/visor360/taskpane.html"/>
+  <IconUrl DefaultValue="https://pmoconsulting2024-star.github.io/360/taskpane.html"/>
+  <HighResolutionIconUrl DefaultValue="https://pmoconsulting2024-star.github.io/360/taskpane.html"/>
+  <SupportUrl DefaultValue="https://pmoconsulting2024-star.github.io/360/taskpane.html"/>
 
   <AppDomains>
     <AppDomain>https://kuula.co</AppDomain>
@@ -31,7 +31,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://pmoconsulting2024-star.github.io/visor360/taskpane.html"/>
+    <SourceLocation DefaultValue="https://pmoconsulting2024-star.github.io/360/taskpane.html"/>
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>

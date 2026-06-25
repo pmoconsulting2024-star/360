@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Visor 360° — HVQRO-06</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #0f172a; }
+    #panorama { width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="panorama"></div>
+  <script>
+    pannellum.viewer('panorama', {
+      type: 'equirectangular',
+      panorama: 'https://raw.githubusercontent.com/pmoconsulting2024-star/360/main/dji_fly_20260619_160042_39_1781914427709_pano_optimized.jpg',
+      autoLoad: true,
+      autoRotate: -2,
+      compass: false,
+      showZoomCtrl: true,
+      showFullscreenCtrl: true,
+      mouseZoom: true,
+      hfov: 110,
+      minHfov: 50,
+      maxHfov: 150,
+      pitch: 0,
+      yaw: 0,
+      strings: {
+        loadButtonLabel: "Cargar panorama",
+        loadingLabel: "Cargando\u2026",
+        bylineLabel: "por %s",
+        noPanoramaError: "No se encontr\u00f3 la imagen 360\u00b0.",
+        fileAccessError: "No se pudo acceder al archivo: %s",
+        malformedURLError: "URL mal formada.",
+        iOS8WebGLError: "Due to iOS 8\u2019s broken WebGL implementation, only static tours are supported.",
+        regularWebGLError: "Tu navegador no soporta WebGL.",
+        jsonError: "Error al cargar el archivo de configuraci\u00f3n.",
+        noConfigError: "No se proporcion\u00f3 configuraci\u00f3n.",
+        grabMouseError: "No se pudo capturar el mouse."
+      }
+    });
+  </script>
+</body>
+</html>
